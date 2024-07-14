@@ -1,0 +1,21 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+interface Props {
+  imagePath: string;
+}
+const { imagePath } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/slide/*.webp"
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/images/slide/*.{jpg,jpeg,png,webp}"`
+  );
+---
+
+<Image
+  src={images[imagePath]()}
+  alt=""
+  class:list={"object-cover object-top w-full h-full"}
+/>

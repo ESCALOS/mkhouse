@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+import TopBar from "@/components/TopBar.astro";
+import Navbar from "@/components/Navbar";
+import { ViewTransitions } from "astro:transitions";
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<html lang={currentLocale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | M&K House</title>
+    <meta name="title" content={i18n.META_TITLE} />
+    <meta name="description" content={i18n.META_DESCRIPTION} />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={i18n.META_TITLE} />
+    <meta property="og:description" content={i18n.META_DESCRIPTION} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <ViewTransitions />
+  </head>
+  <body>
+    <TopBar />
+    <Navbar client:load currentUrl={Astro.url} />
+    <slot />
+  </body>
+</html>

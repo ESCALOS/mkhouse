@@ -1,0 +1,344 @@
+{
+    "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
+    "META_DESCRIPTION": "Book online safely at Casa de Marlon y Karina with discounted rates. We offer the best accommodation in Tarapoto. Cheapest rates available directly from us!",
+    "GO_TO_TOP": "Go to top",
+    "BOOK_NOW": "Book now",
+    "SEE_MORE": "See more",
+    "home": {
+        "about": {
+            "title": "About de M&K House.",
+            "text": "Inspired by a minimalist countryside, exposing the naturalness of its materials, the House of Marlon and Karina offers a spacious, quiet and fresh habitat, surrounded by vegetation bordering the natural conservation area of ​​the La Escalera mountain range. The melodious sound of the birds, the wind that moves the branches of the trees and the sound of the frogs at dusk accompanies the well-deserved rest after an intense day. Just eight minutes from the city center, the House of Marlon and Karina offers you the place where you can feel the nature of our high jungle without entering its thickness and having any service at hand.",
+            "rooms": [
+                {
+                    "id": 1,
+                    "title": "Top Restaurant",
+                    "subtitle": "Breakfast and Dinner",
+                    "imagePath": "/src/images/about1.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Spa and Wellness",
+                    "subtitle": "Open Daily",
+                    "imagePath": "/src/images/about2.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Best Luxury Rooms",
+                    "subtitle": "Cool view",
+                    "imagePath": "/src/images/about3.jpg"
+                }
+            ]
+        },
+        "availability": {
+            "title": "Check Availability",
+            "form": {
+                "checkin": {
+                    "title": "Check-in Date",
+                    "placeholder": "Date"
+                },
+                "checkout": {
+                    "title": "Check-out Date",
+                    "placeholder": "Date"
+                },
+                "adults": {
+                    "title": "Adults",
+                    "placeholder": ""
+                },
+                "children": {
+                    "title": "Children",
+                    "placeholder": ""
+                },
+                "price": {
+                    "title": "Price",
+                    "placeholder": "Max Price($)"
+                }
+            },
+            "button": {
+                "title": "Check Availability",
+                "text": "Check Availability"
+            }
+        },
+        "bestRooms": {
+            "title": "Best Rooms",
+            "mainRoom": {
+                "title": "Luxury Hotel",
+                "description": "Luxury Hotel And Best Resort Peaceful Place To Stay",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae, illum sequi numquam tempora voluptates?",
+                "price": "from 20$",
+                "tags": [
+                    {
+                        "title": "2 guests",
+                        "icon": "fa-users"
+                    },
+                    {
+                        "title": "Double bed",
+                        "icon": "fa-bed"
+                    }
+                ],
+                "button": {
+                    "text": "See rooms",
+                    "href": "/habitaciones/"
+                }
+            },
+            "rooms": [
+                {
+                    "id": 1,
+                    "title": "Habitación familiar",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room2.png"
+                },
+                {
+                    "id": 2,
+                    "title": "Habitación doble",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room3.png"
+                },
+                {
+                    "id": 3,
+                    "title": "Habitación lujosa",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room4.png"
+                },
+                {
+                    "id": 4,
+                    "title": "Habitación de descanso",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room5.png"
+                }
+            ]
+        },
+        "quotation": {
+            "text": "Enjoy a Luxury experience. Discover our locaions. Relax and enjoy your holiday.",
+            "buttonBook": {
+                "text": "Book now",
+                "href": "/habitaciones/"
+            },
+            "buttonContactUs": {
+                "text": "Contact us",
+                "href": "/contactenos/"
+            }
+        },
+        "package": {
+            "title": "20 Years of Hotels and Resort Experience",
+            "textUp": "Discover our Locations",
+            "text": "Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.",
+            "items": [
+                "We make the best for all our customers",
+                "Follow our Resort Luxury Hotels",
+                "Luxury hotels and best resorts",
+                "Double rooms and family rooms",
+                "Enjoy a luxury experience"
+            ],
+            "button": {
+                "text": "Check All Packages",
+                "href": "/nosotros/"
+            }
+        }
+    },
+    "about": {
+        "bestRoom": {
+            "title": "Acerca de M&K House.",
+            "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore sapiente, distinctio perferendis voluptas consequatur quaerat incidunt. Similique, officia! Dolorum fugiat et aliquam necessitatibus quas reiciendis, totam voluptatibus deleniti tempore doloribus dolor modi, ab facilis quam officiis ipsam doloremque.",
+            "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis incidunt iste totam, consequuntur minus assumenda commodi sint asperiores. Voluptatibus incidunt alias.",
+            "rooms": [
+                {
+                    "id": 1,
+                    "title": "Top Restaurant",
+                    "subtitle": "Breakfast and Dinner",
+                    "imagePath": "/src/images/about1.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Spa and Wellness",
+                    "subtitle": "Open Daily",
+                    "imagePath": "/src/images/about2.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Best Luxury Rooms",
+                    "subtitle": "Cool view",
+                    "imagePath": "/src/images/about3.jpg"
+                }
+            ]
+        },
+        "features": {
+            "title": "Doing the right thing, at the right time",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Welcome Drink",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-file-text-o"
+                },
+                {
+                    "id": 2,
+                    "title": "Bike Rental",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-clone"
+                },
+                {
+                    "id": 3,
+                    "title": "WIFI Areas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-trophy"
+                },
+                {
+                    "id": 4,
+                    "title": "Swimming Pool",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-bullseye"
+                }
+            ]
+        },
+        "stats": {
+            "title": "We have a great funfact! Relax & Enjoy your Holiday",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, soluta impedit. Consequatur, quasi mollitia? Adipisci exercitationem amet dolore expedita repudiandae voluptatem impedit ipsa vero repellendus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio molestiae ex aut possimus atque explicabo nostrum recusandae ab quisquam at!",
+            "items": [
+                {
+                    "id": 1,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                },
+                {
+                    "id": 2,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                },
+                {
+                    "id": 3,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                },
+                {
+                    "id": 4,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                }
+            ]
+        }
+    },
+    "services": {
+        "services": {
+            "title": "Luxury Hotel Services",
+            "text": "Our rooms are beautifully designed and comfortable and can accommodate various groups of travelers. All rooms have private bathrooms, a flat-screen TV and a safe.",
+            "cards": [
+                {
+                    "id": 1,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 2,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 3,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 4,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 5,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                }
+            ]
+        },
+        "facilities": {
+            "title": "Our Hotel Facilities",
+            "imagePath": "/src/images/facilities.jpg",
+            "items": [
+                {
+                    "id":1,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                },
+                {
+                    "id":2,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                },
+                {
+                    "id":3,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                },
+                {
+                    "id":4,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                }
+            ]
+        }
+    },
+    "contactUs": {
+        "title": "Contact and Access",
+        "subtitle": "Get it touch",
+        "text": "Enjoy a luxury experience. Discover our locations. Relax and enjoy your vacation.",
+        "items": [
+            {
+                "id": 1,
+                "title": "Call Us",
+                "text": "+51 993 695 507",
+                "href": "tel:+51 993 695 507",
+                "icon": "fa-phone",
+                "target": false
+            },
+            {
+                "id": 2,
+                "title": "Email Us",
+                "text": "marlon@karina.com",
+                "href": "mailto:marlon@karina.com",
+                "icon": "fa-envelope-o",
+                "target": false
+            },
+            {
+                "id": 3,
+                "title": "Facebook",
+                "text": "MKHOUSEHOSTEL",
+                "href": "https://www.facebook.com/MKHOUSEHOSTEL",
+                "icon": "fa-facebook",
+                "target": true
+            },
+            {
+                "id": 4,
+                "title": "Instagram",
+                "text": "mkhousehostel",
+                "href": "https://www.instagram.com/mkhousehostel",
+                "icon": "fa-instagram",
+                "target": true
+            },
+            {
+                "id": 5,
+                "title": "Address",
+                "text": "Jiron Los Alamos C04, Tarapoto, San Martin, Peru",
+                "href": "",
+                "icon": "fa-map-marker",
+                "target": false
+            }
+        ]
+    }
+}

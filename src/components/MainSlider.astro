@@ -1,0 +1,27 @@
+---
+import "@/styles/mainSlider.css";
+import MainSliderItem from "./MainSliderItem.astro";
+const images = Array.from({ length: 8 }, (_, i) => i + 1);
+---
+
+<swiper-container
+  class="h-[44rem] w-full"
+  navigation="true"
+  autoplay-delay="2500"
+  loop="true"
+  pagination="true"
+>
+  {
+    images.map((image) => (
+      <swiper-slide>
+        <MainSliderItem imagePath={`/src/images/slide/${image}.webp`} />
+      </swiper-slide>
+    ))
+  }
+</swiper-container>
+
+<script>
+  import { register } from "swiper/element/bundle";
+
+  register();
+</script>

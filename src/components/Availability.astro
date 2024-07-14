@@ -1,0 +1,70 @@
+---
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { form, title, button } = i18n.home.availability;
+---
+
+<div class="max-w-7xl mx-auto px-6 py-12">
+  <h3 class="text-2xl font-semibold mb-8">{title}</h3>
+  <form
+    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-start justify-start gap-6"
+  >
+    <div>
+      <label class="block font-semibold mb-2 text-sm" for="checkin">
+        {form.checkin.title}
+      </label>
+      <input
+        type="date"
+        id="checkin"
+        name="checkin"
+        class="rounded-md px-4 py-3 border border-gray-400 w-full"
+      />
+    </div>
+    <div>
+      <label class="block font-semibold mb-2 text-sm" for="checkout">
+        {form.checkout.title}
+      </label>
+      <input
+        type="date"
+        id="checkout"
+        name="checkout"
+        class="rounded-md px-4 py-3 border border-gray-400 w-full"
+      />
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-2 text-sm" for="checkout">
+        {form.adults.title}
+      </label>
+      <input
+        type="date"
+        id="adults"
+        name="adults"
+        class="rounded-md px-4 py-3 border border-gray-400 w-full"
+      />
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-2 text-sm" for="checkout">
+        {form.children.title}
+      </label>
+      <input
+        type="date"
+        id="children"
+        name="children"
+        class="rounded-md px-4 py-3 border border-gray-400 w-full"
+      />
+    </div>
+    <div class="col-span-2 md:col-span-4 lg:col-span-2">
+      <label class="lg:block font-semibold mb-2 text-sm hidden" for="checkout">
+        {button.title}
+      </label>
+      <button
+        class="w-full bg-primary-500 text-white font-semibold rounded-md hover:bg-primary-600 transition-colors px-4 py-3"
+      >
+        {button.text}
+      </button>
+    </div>
+  </form>
+</div>
