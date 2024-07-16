@@ -5,6 +5,9 @@
     "SEE_MORE": "Ver más",
     "BOOK_NOW": "Reservar ahora",
     "home": {
+        "gallery": {
+            "title": "Galería"
+        },
         "about": {
             "title": "Acerca de M&K House.",
             "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
@@ -57,6 +60,52 @@
                 "title": "Verificar Disponibilidad",
                 "text": "Verificar Disponibilidad"
             }
+        },
+        "services": {
+            "title": "Servicios",
+            "imagePath": "/src/images/facilities.jpg",
+            "items": [
+                {
+                    "title":"Traslado al Aeropuerto gratis",
+                    "icon": "airport"
+                },
+                {
+                    "title":"Desayuno gratis",
+                    "icon": "breakfast"
+                },
+                {
+                    "title":"Wifi",
+                    "icon": "wifi"
+                },
+                {
+                    "title":"Cable",
+                    "icon": "tv"
+                },
+                {
+                    "title":"Estacionamiento",
+                    "icon": "parking"
+                },
+                {
+                    "title":"Uso de cocina y comedor",
+                    "icon": "kitchen"
+                },
+                {
+                    "title":"Amplio jardín",
+                    "icon": "garden"
+                },
+                {
+                    "title":"Parrilla",
+                    "icon": "grill"
+                },
+                {
+                    "title":"Coordinamos y Asesoramos sus Tours",
+                    "icon": "tours"
+                },
+                {
+                    "title":"Atención Permanente para Cualquier Necesidad",
+                    "icon": "support"
+                }
+            ]
         },
         "bestRooms": {
             "title": "Mejores habitaciones",

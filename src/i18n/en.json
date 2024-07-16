@@ -5,6 +5,9 @@
     "BOOK_NOW": "Book now",
     "SEE_MORE": "See more",
     "home": {
+        "gallery": {
+            "title": "Gallery"
+        },
         "about": {
             "title": "About de M&K House.",
             "text": "Inspired by a minimalist countryside, exposing the naturalness of its materials, the House of Marlon and Karina offers a spacious, quiet and fresh habitat, surrounded by vegetation bordering the natural conservation area of ​​the La Escalera mountain range. The melodious sound of the birds, the wind that moves the branches of the trees and the sound of the frogs at dusk accompanies the well-deserved rest after an intense day. Just eight minutes from the city center, the House of Marlon and Karina offers you the place where you can feel the nature of our high jungle without entering its thickness and having any service at hand.",
@@ -57,6 +60,52 @@
                 "title": "Check Availability",
                 "text": "Check Availability"
             }
+        },
+        "services": {
+            "title": "Services",
+            "imagePath": "/src/images/facilities.jpg",
+            "items": [
+                {
+                    "title":"Free airport transfer",
+                    "icon": "airport"
+                },
+                {
+                    "title":"Free breakfast",
+                    "icon": "breakfast"
+                },
+                {
+                    "title":"Wifi",
+                    "icon": "wifi"
+                },
+                {
+                    "title":"Cable",
+                    "icon": "tv"
+                },
+                {
+                    "title":"Parking lot",
+                    "icon": "parking"
+                },
+                {
+                    "title":"Kitchen and dining room use",
+                    "icon": "kitchen"
+                },
+                {
+                    "title":"Spacious garden",
+                    "icon": "garden"
+                },
+                {
+                    "title":"Grill",
+                    "icon": "grill"
+                },
+                {
+                    "title":"We coordinate and advise your tours",
+                    "icon": "tours"
+                },
+                {
+                    "title":"Permanent Attention for Any Need",
+                    "icon": "support"
+                }
+            ]
         },
         "bestRooms": {
             "title": "Best Rooms",
