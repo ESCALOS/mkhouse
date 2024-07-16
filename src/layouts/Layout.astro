@@ -7,11 +7,20 @@ import TopBar from "@/components/TopBar.astro";
 import Navbar from "@/components/Navbar";
 import { ViewTransitions } from "astro:transitions";
 import { getI18N } from "@/i18n";
+import BrandLogo from "@/images/logo.png";
+import { getImage } from "astro:assets";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const logo = await getImage({
+  src: BrandLogo,
+  width: 137,
+  height: 64,
+  format: "webp",
+});
 ---
 
-<html lang={currentLocale}>
+<html lang={currentLocale} class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -23,22 +32,22 @@ const i18n = getI18N({ currentLocale });
     <meta name="title" content={i18n.META_TITLE} />
     <meta name="description" content={i18n.META_DESCRIPTION} />
     <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={i18n.META_TITLE} />
     <meta property="og:description" content={i18n.META_DESCRIPTION} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
     <ViewTransitions />
   </head>
   <body>
     <TopBar />
-    <Navbar client:load currentUrl={Astro.url} />
+    <Navbar client:load currentUrl={Astro.url} logoPath={logo.src} />
     <slot />
   </body>
 </html>

@@ -8,34 +8,33 @@ import {
   } from "@/i18n/utils";
 import NavItem from "./NavItem";
 
-const navListItems = [
-        {
-            href: "/",
-            label: "nav.inicio"
-        },
-        {
-            href: "/nosotros",
-            label: "nav.nosotros"
-        },
-        {
-            href: "/habitaciones",
-            label: "nav.habitaciones"
-        },
-        {
-            href: "/servicios",
-            label: "nav.servicios"
-        },
-        {
-            href: "/contactenos",
-            label: "nav.contactenos"
-        }
-]
-
-export default ({ currentUrl }) => {
+export default ({ currentUrl, logoPath }) => {
     const lang = getLangFromUrl(currentUrl);
     const t = useTranslations(lang);
     const translatePath = useTranslatedPath(lang);
     const [openNav, setOpenNav] = useState(false)
+    const navListItems = [
+        {
+            href: translatePath("/"),
+            label: "nav.inicio"
+        },
+        {
+            href: `${translatePath("/")}#about`,
+            label: "nav.nosotros"
+        },
+        {
+            href: translatePath("/habitaciones"),
+            label: "nav.habitaciones"
+        },
+        {
+            href: translatePath("/servicios"),
+            label: "nav.servicios"
+        },
+        {
+            href: translatePath("/contactenos"),
+            label: "nav.contactenos"
+        }
+]
     useEffect(() => {
         window.addEventListener(
             "resize",
@@ -47,12 +46,12 @@ export default ({ currentUrl }) => {
         <nav className="p-4 mx-auto max-w-7xl">
             <div className="flex items-center justify-between text-blue-gray-900">
                 <a  href={translatePath("/")}>
-                    <img className="h-16" src="/src/images/logo.png" alt="M&K House Logo" />
+                    <img className="h-16" src={logoPath} alt="M&K House Logo" />
                 </a>
                 <div className="hidden lg:flex items-center justify-center px-4 gap-4">
                     {
                         navListItems.map((item, index) => (
-                            <NavItem href={translatePath(item.href)} currentUrl={currentUrl.pathname} name={t(item.label)} key={index}/>
+                            <NavItem href={item.href} currentUrl={currentUrl.pathname} name={t(item.label)} key={index}/>
                         ))
                     }
                 </div>
@@ -60,8 +59,8 @@ export default ({ currentUrl }) => {
                     className="lg:hidden p-2 rounded-md hover:bg-gray-200"
                     onClick={() =>setOpenNav(!openNav)}>
                     {
-                        openNav ? <XMarkIcon className="w-6 h-6" strokeWidth={2} />
-                        : <Bars3Icon className="w-6 h-6" strokeWidth={2} />
+                        openNav ? <XMarkIcon title="xMark" className="w-6 h-6" strokeWidth={2} />
+                        : <Bars3Icon title="bar3" className="w-6 h-6" strokeWidth={2} />
                     }
                 </motion.div>
             </div>

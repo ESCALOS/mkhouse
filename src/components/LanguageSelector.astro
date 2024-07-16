@@ -18,7 +18,10 @@ const otherLocales = Object.values(LANGUAGES).filter(
 <div>
   {
     otherLocales.map((locale) => (
-      <a href={translatePath(`/${route ? route : ""}`, locale.code)}>
+      <a
+        href={translatePath(`/${route ? route : ""}`, locale.code)}
+        aria-label="switch language"
+      >
         <locale.flag />
       </a>
     ))

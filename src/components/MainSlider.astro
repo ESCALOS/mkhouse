@@ -1,5 +1,4 @@
 ---
-import "@/styles/mainSlider.css";
 import MainSliderItem from "./MainSliderItem.astro";
 const images = Array.from({ length: 8 }, (_, i) => i + 1);
 ---
@@ -10,6 +9,7 @@ const images = Array.from({ length: 8 }, (_, i) => i + 1);
   autoplay-delay="2500"
   loop="true"
   pagination="true"
+  pagination-clickable="true"
 >
   {
     images.map((image) => (
@@ -25,3 +25,16 @@ const images = Array.from({ length: 8 }, (_, i) => i + 1);
 
   register();
 </script>
+
+<style>
+  :root {
+    --swiper-navigation-color: #72a34c;
+    --swiper-pagination-color: #72a34c;
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-border-radius: 0.5rem;
+    --swiper-pagination-bullet-width: 25px;
+    --swiper-pagination-bullet-heigth: 6px;
+    --swiper-pagination-bottom: 1rem;
+  }
+</style>

@@ -1,0 +1,17 @@
+---
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { text, title } = i18n.home.about;
+---
+
+<section class="bg-[#f8f9fa]" id="about">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 py-12 px-6">
+    <h3
+      class="text-3xl text-center md:text-left md:text-4xl content-center text-gray-900 font-bold pb-4 md:pb-0"
+    >
+      {title}
+    </h3>
+    <p class="text-zinc-500 text-justify leading-8">{text}</p>
+  </div>
+</section>

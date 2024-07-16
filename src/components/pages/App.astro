@@ -5,10 +5,14 @@ interface Props {
 import Layout from "@/layouts/Layout.astro";
 import MainSlider from "../MainSlider.astro";
 import Availability from "../Availability.astro";
+import About from "../About.astro";
+import CardRoom from "../CardRoom.astro";
 const { title } = Astro.props;
 ---
 
 <Layout title={title}>
   <MainSlider />
   <Availability />
+  <About />
+  <CardRoom />
 </Layout>

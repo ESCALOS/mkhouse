@@ -3,9 +3,12 @@ interface Props {
   title: string;
 }
 import Layout from "@/layouts/Layout.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import About from "@/components/About.astro";
 const { title } = Astro.props;
 ---
 
 <Layout title={title}>
-  <h1>Nosotros</h1>
+  <Breadcrumb />
+  <About />
 </Layout>
