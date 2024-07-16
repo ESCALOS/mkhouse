@@ -1,18 +1,18 @@
 {
     "BUSINESS_NAME": "M&K House.",
     "META_TITLE": "M&K House - Tarapoto",
-    "META_DESCRIPTION": "Book online safely at M&K House with discounted rates. We offer the best accommodation in Tarapoto. Cheapest rates available directly from us!",
+    "META_DESCRIPTION": "Discover M&K House in Tarapoto, Peru: your ideal retreat near Lamas, Laguna Azul (Sauce), the waterfalls of Chullachaqui, Salto de la Bruja, Ahuashiyacu, and Pishurayaku. Explore Altomayo, Moyobamba, Rioja Tioyaku, and their hot springs. Visit Urku, Chazuta, the Santa Elena Reserve, Alto Shilcayo, and more. Enjoy downtown Tarapoto with its squares, restaurants, bars, pubs, and nightclubs. Venture to the Ahuashiyacu, Chullachaqui, and Salto de la Bruja waterfalls and the La Unión Waterfalls. Immerse yourself in culture with the Polish petroglyphs. Book your stay now!",
     "GO_TO_TOP": "Go to top",
     "SEE_MORE": "See more",
     "BOOK_NOW": "Book now",
     "COPYRIGHT": "All rights reserved.",
     "home": {
         "gallery": {
-            "title": "Gallery"
+            "title": "Our rooms"
         },
         "about": {
             "title": "About de M&K House.",
-            "text": "Inspired by a minimalist countryside, exposing the naturalness of its materials, the House of Marlon and Karina offers a spacious, quiet and fresh habitat, surrounded by vegetation bordering the natural conservation area of ​​the La Escalera mountain range. The melodious sound of the birds, the wind that moves the branches of the trees and the sound of the frogs at dusk accompanies the well-deserved rest after an intense day. Just eight minutes from the city center, the House of Marlon and Karina offers you the place where you can feel the nature of our high jungle without entering its thickness and having any service at hand.",
+            "text": "Inspired by a minimalist countryside, exposing the naturalness of its materials, M&K House offers a spacious, quiet and fresh habitat, surrounded by vegetation bordering the natural conservation area of ​​the La Escalera mountain range. The melodious sound of the birds, the wind that moves the branches of the trees and the sound of the frogs at dusk accompanies the well-deserved rest after an intense day. Just eight minutes from the city center, M&K House offers you the place where you can feel the nature of our high jungle without entering its thickness and having any service at hand.",
             "rooms": [
                 {
                     "id": 1,
@@ -350,8 +350,8 @@
         "items": [
             {
                 "title": "Call Us",
-                "text": "+51 993 695 507",
-                "href": "tel:+51 993 695 507",
+                "text": "993695507",
+                "href": "tel:+51993695507",
                 "icon": "s-phone",
                 "target": false
             },

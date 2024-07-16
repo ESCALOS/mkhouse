@@ -19,8 +19,8 @@ export default ({images = [], title = "Gallery"}) => {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12" id={galleryID}>
-      <h2 className='pb-8 text-4xl text-center font-semibold'>{title}</h2>
+    <section className="max-w-7xl mx-auto px-4 py-24" id={galleryID}>
+      <h2 className='pb-16 text-4xl text-center font-semibold'>{title}</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
       {images.map((image, index) => (
         <a
@@ -31,6 +31,7 @@ export default ({images = [], title = "Gallery"}) => {
           target="_blank"
           rel="noreferrer"
           aria-label='M&K House Room'
+          className='shadow-sm'
         >
           <img src={image} alt="M&K House Room" className='object-cover object-top w-full h-full transition-all duration-500 rounded-md brightness-75 hover:brightness-100 cursor-zoom-in' />
         </a>

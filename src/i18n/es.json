@@ -1,18 +1,18 @@
 {
-    "BUSINESS_NAME": "Casa de Marlon y Karina.",
+    "BUSINESS_NAME": "M&K House.",
     "META_TITLE": "M&K House - Tarapoto",
-    "META_DESCRIPTION": "Reserve en línea con seguridad en M&K House con tarifas rebajadas",
+    "META_DESCRIPTION": "Descubre M&K House en Tarapoto, Perú: tu refugio ideal cerca de Lamas, Laguna Azul (Sauce), las cascadas de Chullachaqui, Salto de la Bruja, Ahuashiyacu y Pishurayaku. Explora Altomayo, Moyobamba, Rioja Tioyaku y sus aguas termales. Visita Urku, Chazuta, la Reserva Santa Elena, Alto Shilcayo y más. Disfruta del centro de Tarapoto con sus plazas, restaurantes, bares, pubs y discotecas. Aventúrate a las Cataratas de Ahuashiyacu, Chullachaqui, Salto de la Bruja y las Cascadas La Unión. Sumérgete en la cultura con los petroglifos de Polish. ¡Reserva tu estancia ahora!",
     "GO_TO_TOP": "Ir al principio",
     "SEE_MORE": "Ver más",
     "BOOK_NOW": "Reservar ahora",
     "COPYRIGHT": "Todos los derechos reservados.",
     "home": {
         "gallery": {
-            "title": "Galería"
+            "title": "Nuestras habitaciones"
         },
         "about": {
             "title": "Acerca de M&K House.",
-            "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
+            "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, M&K House ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad M&K House te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
             "rooms": [
                 {
                     "id": 1,
@@ -189,7 +189,7 @@
     "about": {
         "bestRoom": {
             "title": "Acerca de M&K House.",
-            "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
+            "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, M&K House ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad M&K House te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
             "rooms": [
                 {
                     "id": 1,
@@ -349,8 +349,8 @@
         "items": [
             {
                 "title": "Llámanos",
-                "text": "+51 993 695 507",
-                "href": "tel:+51 993 695 507",
+                "text": "993695507",
+                "href": "tel:+51993695507",
                 "icon": "s-phone",
                 "target": false
             },
