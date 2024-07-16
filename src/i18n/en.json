@@ -1,9 +1,11 @@
 {
-    "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
-    "META_DESCRIPTION": "Book online safely at Casa de Marlon y Karina with discounted rates. We offer the best accommodation in Tarapoto. Cheapest rates available directly from us!",
+    "BUSINESS_NAME": "M&K House.",
+    "META_TITLE": "M&K House - Tarapoto",
+    "META_DESCRIPTION": "Book online safely at M&K House with discounted rates. We offer the best accommodation in Tarapoto. Cheapest rates available directly from us!",
     "GO_TO_TOP": "Go to top",
-    "BOOK_NOW": "Book now",
     "SEE_MORE": "See more",
+    "BOOK_NOW": "Book now",
+    "COPYRIGHT": "All rights reserved.",
     "home": {
         "gallery": {
             "title": "Gallery"
@@ -343,51 +345,62 @@
             ]
         }
     },
-    "contactUs": {
-        "title": "Contact and Access",
-        "subtitle": "Get it touch",
-        "text": "Enjoy a luxury experience. Discover our locations. Relax and enjoy your vacation.",
+    "contact": {
+        "title": "Contact Us",
         "items": [
             {
-                "id": 1,
                 "title": "Call Us",
                 "text": "+51 993 695 507",
                 "href": "tel:+51 993 695 507",
-                "icon": "fa-phone",
+                "icon": "s-phone",
                 "target": false
             },
             {
-                "id": 2,
-                "title": "Email Us",
-                "text": "marlon@karina.com",
-                "href": "mailto:marlon@karina.com",
-                "icon": "fa-envelope-o",
-                "target": false
-            },
-            {
-                "id": 3,
                 "title": "Facebook",
                 "text": "MKHOUSEHOSTEL",
                 "href": "https://www.facebook.com/MKHOUSEHOSTEL",
-                "icon": "fa-facebook",
+                "icon": "s-facebook",
                 "target": true
             },
             {
-                "id": 4,
                 "title": "Instagram",
                 "text": "mkhousehostel",
                 "href": "https://www.instagram.com/mkhousehostel",
-                "icon": "fa-instagram",
+                "icon": "s-instagram",
                 "target": true
             },
             {
-                "id": 5,
                 "title": "Address",
                 "text": "Jiron Los Alamos C04, Tarapoto, San Martin, Peru",
-                "href": "",
-                "icon": "fa-map-marker",
-                "target": false
+                "href": "https://maps.app.goo.gl/Sz7nf8JPufTvwTHR7",
+                "icon": "s-map-pin",
+                "target": true
             }
-        ]
+        ],
+        "form": {
+            "inputs": [
+                {
+                    "name": "name",
+                    "label": "Name",
+                    "span": 1
+                },
+                {
+                    "name": "email",
+                    "label": "Email",
+                    "span": 1
+                },
+                {
+                    "name": "subject",
+                    "label": "Subject",
+                    "span": 2
+                },
+                {
+                    "name": "message",
+                    "label": "Message",
+                    "span": 2
+                }
+            ],
+            "buttonText": "Send Message"
+        }
     }
 }

@@ -49,30 +49,38 @@ if (Astro.request.method === "POST") {
     </div>
 
     <div>
-      <label class="block font-semibold mb-2 text-sm" for="checkout">
+      <label class="block font-semibold mb-2 text-sm" for="adults">
         {form.adults.title}
       </label>
-      <input
-        type="date"
-        id="adults"
+      <select
         name="adults"
-        class="rounded-md px-4 py-3 border border-gray-400 w-full"
-      />
+        id="adults"
+        class="rounded-md px-4 py-3 border border-gray-400 bg-white w-full"
+      >
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
     </div>
 
     <div>
-      <label class="block font-semibold mb-2 text-sm" for="checkout">
+      <label class="block font-semibold mb-2 text-sm" for="children">
         {form.children.title}
       </label>
-      <input
-        type="date"
-        id="children"
+      <select
         name="children"
-        class="rounded-md px-4 py-3 border border-gray-400 w-full"
-      />
+        id="children"
+        class="rounded-md px-4 py-3 border border-gray-400 bg-white w-full"
+      >
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
     </div>
     <div class="col-span-2 md:col-span-4 lg:col-span-2">
-      <label class="lg:block font-semibold mb-2 text-sm hidden" for="checkout">
+      <label class="lg:block font-semibold mb-2 text-sm hidden" for="send">
         {button.title}
       </label>
       <button

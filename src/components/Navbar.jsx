@@ -27,11 +27,11 @@ export default ({ currentUrl, logoPath }) => {
             label: "nav.habitaciones"
         },
         {
-            href: translatePath("/servicios"),
+            href: `${translatePath("/")}#services`,
             label: "nav.servicios"
         },
         {
-            href: translatePath("/contactenos"),
+            href: `${translatePath("/")}#contact`,
             label: "nav.contactenos"
         }
 ]

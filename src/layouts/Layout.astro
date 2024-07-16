@@ -5,6 +5,7 @@ interface Props {
 const { title } = Astro.props;
 import TopBar from "@/components/TopBar.astro";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 import { getI18N } from "@/i18n";
 import BrandLogo from "@/images/logo.png";
@@ -49,5 +50,6 @@ const logo = await getImage({
     <TopBar />
     <Navbar client:load currentUrl={Astro.url} logoPath={logo.src} />
     <slot />
+    <Footer />
   </body>
 </html>

@@ -1,9 +1,11 @@
 {
-    "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
-    "META_DESCRIPTION": "Reserve en línea con seguridad en Casa de Marlon y Karina - Tarapoto con tarifas rebajadas",
+    "BUSINESS_NAME": "Casa de Marlon y Karina.",
+    "META_TITLE": "M&K House - Tarapoto",
+    "META_DESCRIPTION": "Reserve en línea con seguridad en M&K House con tarifas rebajadas",
     "GO_TO_TOP": "Ir al principio",
     "SEE_MORE": "Ver más",
     "BOOK_NOW": "Reservar ahora",
+    "COPYRIGHT": "Todos los derechos reservados.",
     "home": {
         "gallery": {
             "title": "Galería"
@@ -343,50 +345,65 @@
         }
     },
     "contact": {
-        "title": "Contacto y Acceso",
-        "subtitle": "Póngase en contacto",
-        "text": "Disfruta de una experiencia de lujo. Descubre nuestras ubicaciones. Relájate y disfruta de tus vacaciones.",
+        "title": "Contáctenos",
         "items": [
             {
-                "id": 1,
                 "title": "Llámanos",
                 "text": "+51 993 695 507",
                 "href": "tel:+51 993 695 507",
-                "icon": "fa-phone",
+                "icon": "s-phone",
                 "target": false
             },
             {
-                "id": 2,
-                "title": "Envíanos un correo",
-                "text": "marlon@karina.com",
-                "href": "mailto:marlon@karina.com",
-                "icon": "fa-envelope-o",
-                "target": false
-            },
-            {
-                "id": 3,
                 "title": "Facebook",
                 "text": "MKHOUSEHOSTEL",
                 "href": "https://www.facebook.com/MKHOUSEHOSTEL",
-                "icon": "fa-facebook",
+                "icon": "s-facebook",
                 "target": true
             },
             {
-                "id": 4,
                 "title": "Instagram",
                 "text": "mkhousehostel",
                 "href": "https://www.instagram.com/mkhousehostel",
-                "icon": "fa-instagram",
+                "icon": "s-instagram",
                 "target": true
             },
             {
-                "id": 5,
                 "title": "Dirección",
                 "text": "Jiron Los Alamos C04, Tarapoto, San Martin, Peru",
-                "href": "",
-                "icon": "fa-map-marker",
-                "target": false
+                "href": "https://maps.app.goo.gl/Sz7nf8JPufTvwTHR7",
+                "icon": "s-map-pin",
+                "target": true
             }
-        ]
+        ],
+        "form": {
+            "inputs": [
+                {
+                    "type": "text",
+                    "name": "name",
+                    "label": "Nombre",
+                    "span": 1
+                },
+                {
+                    "type": "text",
+                    "name": "email",
+                    "label": "Correo Electrónico",
+                    "span": 1
+                },
+                {
+                    "type": "text",
+                    "name": "subject",
+                    "label": "Asunto",
+                    "span": 2
+                },
+                {
+                    "type": "text",
+                    "name": "message",
+                    "label": "Mensaje",
+                    "span": 2
+                }
+            ],
+            "buttonText": "Enviar Mensaje"
+        }
     }
 }

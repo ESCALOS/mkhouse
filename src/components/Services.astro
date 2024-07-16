@@ -6,9 +6,11 @@ const i18n = getI18N({ currentLocale });
 const { title, items } = i18n.home.services;
 ---
 
-<section class="py-12 px-4 mx-auto max-w-7xl">
-  <h2 class="pb-8 text-4xl text-center font-semibold">{title}</h2>
-  <div class="flex flex-wrap gap-6 justify-center items-center">
-    {items.map((item) => <ServiceItem {...item} />)}
+<section class="bg-[#f8f9fa]" id="services">
+  <div class="py-12 px-4 mx-auto max-w-7xl">
+    <h2 class="pb-8 text-4xl text-center font-semibold">{title}</h2>
+    <div class="flex flex-wrap gap-6 justify-center items-center">
+      {items.map((item) => <ServiceItem {...item} />)}
+    </div>
   </div>
 </section>

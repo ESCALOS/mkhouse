@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  href: string;
+  icon: string;
+  target: boolean;
+}
+import { Icon } from "astro-icon/components";
+const { title, text, href = "", icon, target } = Astro.props;
+---
+
+<div class="flex">
+  <Icon name={icon} title={title} class="text-primary-500 mt-2" size={20} />
+  <div>
+    <p class="text-xl font-semibold ml-4">{title}</p>
+    <a
+      class="ml-4 text-zinc-500 hover:text-secondary-500 hover:underline"
+      href={href}
+      target={target ? "_blank" : "_self"}>{text}</a
+    >
+  </div>
+</div>

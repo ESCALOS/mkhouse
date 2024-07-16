@@ -1,0 +1,14 @@
+---
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class="bg-black">
+  <div class="mx-auto max-w-7xl text-center h-20 content-center">
+    <p class="text-white text-lg font-semibold">
+      ©2024. {i18n.BUSINESS_NAME}
+      {i18n.COPYRIGHT}
+    </p>
+  </div>
+</div>
