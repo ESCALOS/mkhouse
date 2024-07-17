@@ -5,3 +5,7 @@
     --swiper-pagination-bullet-inactive-opacity: 1;
     --swiper-pagination-bullet-border-radius: 0.5rem;
   }
+
+  .tooltip {
+    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.5);
+  }
