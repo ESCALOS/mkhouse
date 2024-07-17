@@ -12,7 +12,7 @@
         },
         "about": {
             "title": "About de M&K House.",
-            "text": "Inspired by a minimalist countryside, exposing the naturalness of its materials, M&K House offers a spacious, quiet and fresh habitat, surrounded by vegetation bordering the natural conservation area of ​​the La Escalera mountain range. The melodious sound of the birds, the wind that moves the branches of the trees and the sound of the frogs at dusk accompanies the well-deserved rest after an intense day. Just eight minutes from the city center, M&K House offers you the place where you can feel the nature of our high jungle without entering its thickness and having any service at hand.",
+            "text": "Inspired by a minimalist country house, exposing the naturalness of its materials, M&K House offers a spacious, quiet and fresh habitat, surrounded by vegetation bordering the La Escalera mountain range natural conservation area. The melodious sound of birds, the wind moving the branches of the trees and the sound of frogs at dusk accompany the well-deserved rest after an intense day. Just eight minutes from the city center, M&K House offers you the place where you can feel the nature of our high jungle without entering its thickness and having any service at hand.",
             "rooms": [
                 {
                     "id": 1,
@@ -106,6 +106,65 @@
                 {
                     "title":"Permanent Attention for Any Need",
                     "icon": "support"
+                }
+            ]
+        },
+        "reviews": {
+            "title": "Reviews",
+            "items": [
+                {
+                    "customer": "José Chafloque",
+                    "date": "hace 11 meses en Google",
+                    "raiting": 5,
+                    "review": "En mi viaje a Tarapoto, sin duda, fue la mejor alternativa. Además de los desayunos y el traslado desde el aeropuerto (que están incluidos), es un lugar agradable, fresco, con mucho espacio y una cocina bien equipada. El ambiente es tranquilo, apartado del ruido de las motos citadinas, que por cierto abundan... También hacen movilidad privada, es cuestión de coordinar. Regresaría sin pensarlo."
+                },
+                {
+                    "customer": "Ximena",
+                    "date": "Hace 4 meses en  Google",
+                    "raiting": 5,
+                    "review": "Excelente lugar y excelentes personas que te reciben y te hacen sentir más cómodo que en casa! Súper recomendado!!!!"
+                },
+                {
+                    "customer": "Emily Rivera",
+                    "date": "hace 11 meses en Google",
+                    "raiting": 5,
+                    "review": "Viajé con mi familia hace 2 meses y nos hospedamos por 5 días, un espacio amplio y sobre todo donde relajarse, lejos de la bulla citadina. Está bien rodeado de árboles, usamos los espacios comúnes con toda tranquilidad, la cocina un súper plus, los balcones para salir a relajarse un poco y si coordinas, tienes movilidad para el aeropuerto. Lo que más me gustó era la vista desde mi habitación al despertar. De todas maneras volveremos a ir para nuestro siguiente viaje 🤗"
+                },
+                {
+                    "customer": "Manolo Trigoso Barentzen",
+                    "date": "hace 8 meses en Google",
+                    "raiting": 5,
+                    "review": "La Casa de Marlon y Karina, anfitriones excepcionales, siempre dispuestos a brindar un servicio de primera y estar atentos a tus necesidades 👍, recojo y retorno al aeropuerto, ambiente tranquilo, lejos de bullicio de las motos, habitaciones amplias, cómodas y frescas con balcón y vista a naturaleza, baños limpios y con todos los accesorios, buena conexion a Internet, desayunos incluidos y algo invalorable: un buen ambiente como en casa 🏡. 😉"
+                },
+                {
+                    "customer": "Eduardo Morales",
+                    "date": "hace 2 meses en Google",
+                    "raiting": 5,
+                    "review": "Un excelente lugar con anfitriones de primera 100 % recomendable."
+                },
+                {
+                    "customer": "Isabel Guédez",
+                    "date": "hace 10 meses en Google",
+                    "raiting": 5,
+                    "review": "Excelente lugar para alejarse unos días y disfrutar de una maravillosa vista, clima muy ameno en una casa espaciosa, con lindos acabados, todo de estreno. Super recomendado"
+                },
+                {
+                    "customer": "Josecarlos Alarcon",
+                    "date": "hace 10 meses en Google",
+                    "raiting": 5,
+                    "review": "Alojamiento con habitaciones muy amplias, todas con balcones, frescas y bien ventiladas .La atención de Karina y Marlon con nosotros fue estupenda. Los recomiendo!"
+                },
+                {
+                    "customer": "ELIZABETH HOPPEN",
+                    "date": "hace 10 meses en Google",
+                    "raiting": 5,
+                    "review": "La casa de Marlon y Karina, un lugar muy agradable, acogedor me sentí muy cómoda y la atención de parte de sus Anfitriones excelente. Volveré muy pronto."
+                },
+                {
+                    "customer": "Patricia Castillo",
+                    "date": "hace 2 meses en Google",
+                    "raiting": 5,
+                    "review": "Sin duda la mejor opción para aquellas personas que desean unos días de paz y pleno contacto con la naturaleza que nos ofrece la hermosa ciudad de Tarapoto. Anfitriones de primera hacen un ambiente familiar muy agradable"
                 }
             ]
         },

@@ -4,7 +4,7 @@ const images = Array.from({ length: 8 }, (_, i) => i + 1);
 ---
 
 <swiper-container
-  class="h-[44rem] w-full"
+  class="h-[44rem] min-[2560px]:h-[70rem] w-full"
   navigation="true"
   autoplay-delay="2500"
   loop="true"
@@ -14,7 +14,10 @@ const images = Array.from({ length: 8 }, (_, i) => i + 1);
   {
     images.map((image) => (
       <swiper-slide>
-        <MainSliderItem imagePath={`/src/images/slide/${image}.webp`} />
+        <MainSliderItem
+          id={image}
+          imagePath={`/src/images/slide/${image}.webp`}
+        />
       </swiper-slide>
     ))
   }
