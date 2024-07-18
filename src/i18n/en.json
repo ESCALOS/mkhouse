@@ -37,31 +37,12 @@
         "availability": {
             "title": "Check Availability",
             "form": {
-                "checkin": {
-                    "title": "Check-in Date",
-                    "placeholder": "Date"
-                },
-                "checkout": {
-                    "title": "Check-out Date",
-                    "placeholder": "Date"
-                },
-                "adults": {
-                    "title": "Adults",
-                    "placeholder": ""
-                },
-                "children": {
-                    "title": "Children",
-                    "placeholder": ""
-                },
-                "price": {
-                    "title": "Price",
-                    "placeholder": "Max Price($)"
-                }
+                "checkin": "Check-in Date",
+                "checkout": "Check-out Date",
+                "adults": "Adults",
+                "children": "Children"
             },
-            "button": {
-                "title": "Check Availability",
-                "text": "Check Availability"
-            }
+            "buttonText": "Check Availability"
         },
         "services": {
             "title": "Services",

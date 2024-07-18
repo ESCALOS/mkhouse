@@ -9,7 +9,7 @@ type Inputs = {
 }
 
 export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
-  const { register, handleSubmit, formState: {errors} } = useForm<Inputs>();
+  const { register, handleSubmit, formState: {errors}, reset } = useForm<Inputs>();
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const onSubmit: SubmitHandler<Inputs> = async data => {
@@ -23,19 +23,16 @@ export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
         body: JSON.stringify(data)
       });
 
-      const result = await response.json();
-
       if (response.ok) {
         alert('Mensaje Enviado');
-        console.log(result.message)
       } else {
-        alert(`Error: ${result.message}`);
+        alert('No se pudo enviar el mensaje');
       }
     } catch (error) {
       alert('Hubo un error al enviar el mensaje.');
-      console.error(error);
     } finally {
       setIsSubmitting(false)
+      reset()
     }
   };
 

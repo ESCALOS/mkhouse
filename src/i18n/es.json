@@ -37,31 +37,12 @@
         "availability": {
             "title": "Verificar Disponibilidad",
             "form": {
-                "checkin": {
-                    "title": "Fecha de Ingreso",
-                    "placeholder": "Date"
-                },
-                "checkout": {
-                    "title": "Fecha de Salida",
-                    "placeholder": "Date"
-                },
-                "adults": {
-                    "title": "Adultos",
-                    "placeholder": ""
-                },
-                "children": {
-                    "title": "Niños",
-                    "placeholder": ""
-                },
-                "price": {
-                    "title": "Precio",
-                    "placeholder": "Precio Max(S/.)"
-                }
+                "checkin": "Fecha de Ingreso",
+                "checkout": "Fecha de Salida",
+                "adults": "Adultos",
+                "children": "Niños"
             },
-            "button": {
-                "title": "Verificar Disponibilidad",
-                "text": "Verificar Disponibilidad"
-            }
+            "buttonText": "Verificar Disponibilidad"
         },
         "services": {
             "title": "Servicios",
