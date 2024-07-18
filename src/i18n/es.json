@@ -53,13 +53,13 @@
                     }
                 },
                 "adults": {
-                    "label": "Adults",
+                    "label": "Adultos",
                     "errors": {
                         "required": "La cantidad de adultos es requerida"
                     }
                 },
                 "children": {
-                    "label": "Children",
+                    "label": "Niños",
                     "errors": {
                         "required": "La cantidad de niños es requerida"
                     }
