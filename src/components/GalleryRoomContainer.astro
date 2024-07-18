@@ -11,12 +11,24 @@ import Gal6 from "@/images/gallery/gal6.png";
 import Gal7 from "@/images/gallery/gal7.png";
 import Gal8 from "@/images/gallery/gal8.png";
 import Gal9 from "@/images/gallery/gal9.png";
+import Gal10 from "@/images/gallery/gal10.webp";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { title } = i18n.home.gallery;
 
-const imagePaths = [Gal1, Gal2, Gal3, Gal4, Gal5, Gal6, Gal7, Gal8, Gal9];
+const imagePaths = [
+  Gal1,
+  Gal2,
+  Gal3,
+  Gal4,
+  Gal5,
+  Gal6,
+  Gal7,
+  Gal8,
+  Gal9,
+  Gal10,
+];
 
 const optimizedImages = await optimizeImages(imagePaths, 700, 500, "webp");
 ---

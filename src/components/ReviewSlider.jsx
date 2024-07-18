@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/pagination';
 import '@/styles/review.css'
-import { Pagination } from 'swiper/modules';
+import { Autoplay,Pagination } from 'swiper/modules';
 
 export default ({reviews = []}) => {
     const breakpoints = {
@@ -23,8 +23,12 @@ export default ({reviews = []}) => {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         breakpoints={breakpoints}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination]}
         className='h-96 w-full'
         style={{ padding: ".5rem .5rem 0 .5rem" }}
       >

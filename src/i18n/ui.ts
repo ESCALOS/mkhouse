@@ -27,14 +27,14 @@ export const ui = {
 		'nav.nosotros': 'Nosotros',
 		'nav.servicios': 'Servicios',
 		'nav.contactenos': 'Contáctenos',
-		'nav.habitaciones': 'Habitaciones'
+		'nav.galeria': 'Galería'
 	},
 	en: {
 		'nav.inicio': 'Home',
 		'nav.nosotros': 'About',
 		'nav.servicios': 'Services',
 		'nav.contactenos': 'Contact us',
-		'nav.habitaciones': 'Rooms'
+		'nav.galeria': 'Gallery'
 	}
 } as const;
 
@@ -43,12 +43,12 @@ export const routes = {
 		nosotros: 'nosotros',
 		servicios: 'servicios',
 		contactenos: 'contactenos',
-		habitaciones: 'habitaciones'
+		galeria: 'galeria'
 	},
 	en: {
 		nosotros: 'about',
 		servicios: 'services',
 		contactenos: 'contact-us',
-		habitaciones: 'rooms'
+		galeria: 'gallery'
 	}
 };

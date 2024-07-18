@@ -24,7 +24,7 @@ export default ({ currentUrl, logoPath }) => {
         },
         {
             href: `${translatePath("/")}#gallery-room`,
-            label: "nav.habitaciones"
+            label: "nav.galeria"
         },
         {
             href: `${translatePath("/")}#services`,
