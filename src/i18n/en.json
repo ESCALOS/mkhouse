@@ -437,29 +437,13 @@
             }
         ],
         "form": {
-            "inputs": [
-                {
-                    "name": "name",
-                    "label": "Name",
-                    "span": 1
-                },
-                {
-                    "name": "email",
-                    "label": "Email",
-                    "span": 1
-                },
-                {
-                    "name": "subject",
-                    "label": "Subject",
-                    "span": 2
-                },
-                {
-                    "name": "message",
-                    "label": "Message",
-                    "span": 2
-                }
-            ],
-            "buttonText": "Send Message"
+            "inputs": {
+                "name": "Nombre",
+                "email": "Correo Electrónico",
+                "subject": "Asunto",
+                "message": "Mensaje"
+            },
+            "buttonText": "Enviar Mensaje"
         }
     }
 }
