@@ -37,10 +37,33 @@
         "availability": {
             "title": "Check Availability",
             "form": {
-                "checkin": "Check-in Date",
-                "checkout": "Check-out Date",
-                "adults": "Adults",
-                "children": "Children"
+                "checkin": {
+                    "label": "Check-in Date",
+                    "errors": {
+                        "required": "Check-in date is required",
+                        "validateDate": "Invalid Date"
+                    }
+                },
+                "checkout": {
+                    "label": "Check-out Date",
+                    "errors": {
+                        "required":"Check-out date is required",
+                        "validateDate": "Invalid Date",
+                        "validateCheckoutDate": "The Check-out date must be after the Check-in date"
+                    }
+                },
+                "adults": {
+                    "label": "Adults",
+                    "errors": {
+                        "required": "The number of adults is required"
+                    }
+                },
+                "children": {
+                    "label": "Children",
+                    "errors": {
+                        "required": "The number of children is required"
+                    }
+                }
             },
             "buttonText": "Check Availability"
         },
@@ -419,12 +442,40 @@
         ],
         "form": {
             "inputs": {
-                "name": "Nombre",
-                "email": "Correo Electrónico",
-                "subject": "Asunto",
-                "message": "Mensaje"
+                "name": {
+                    "label": "Name",
+                    "errors": {
+                        "required": "The name is required",
+                        "minLength": "The name must be at least 3 characters",
+                        "maxLength": "The name must be less than 20 characters"
+                    }
+                },
+                "email": {
+                    "label": "Email",
+                    "errors": {
+                        "required": "The email is required",
+                        "pattern": "Email is not valid"
+                    }
+                },
+                "subject": {
+                    "label": "Subject",
+                    "errors": {
+                        "required": "The subject is required",
+                        "minLength": "The message must be at least 3 characters"
+                    }
+                },
+                "message": {
+                    "label": "Message",
+                    "errors": {
+                        "required": "The message is required",
+                        "minLength": "The message must be at least 3 characters"
+                    }
+                }
             },
-            "buttonText": "Enviar Mensaje"
+            "buttonText":{
+                "normal": "Send message",
+                "loading": "Sending..."
+            }
         }
     }
 }

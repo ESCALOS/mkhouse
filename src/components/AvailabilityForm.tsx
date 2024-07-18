@@ -7,16 +7,46 @@ type Form = {
     children: string,
 }
 
-export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: Form, buttonText: string}) => {
+type Inputs = {
+  checkin: {
+    label: string,
+    errors: {
+      required: string,
+      validateDate: string
+    }
+  },
+  checkout: {
+    label: string,
+    errors: {
+      required: string,
+      validateDate: string,
+      validateCheckoutDate: string
+    }
+  },
+  adults: {
+    label: string,
+    errors: {
+      required: string,
+    }
+  }
+  children: {
+    label: string,
+    errors: {
+      required: string,
+    }
+  },
+}
+
+export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: Inputs, buttonText: string}) => {
     const { register, handleSubmit, formState: {errors}, getValues } = useForm<Form>();
 
     const validateDate = (date: string) => {
-      return !isNaN(Date.parse(date)) || "Fecha no válida";
+      return !isNaN(Date.parse(date)) || checkin.errors.validateDate;
     };
 
-    const validateCheckoutDate = (checkout: string) => {
-      const checkin = getValues("checkin");
-      return new Date(checkout) > new Date(checkin) || "La fecha de check-out debe ser posterior a la fecha de check-in";
+    const validateCheckoutDate = (checkoutValue: string) => {
+      const checkinValue = getValues("checkin");
+      return new Date(checkoutValue) > new Date(checkinValue) || checkout.errors.validateCheckoutDate;
     };
 
     const formatDate = (dateString: string) => {
@@ -48,13 +78,13 @@ export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: F
       >
         <div>
           <label className="block font-semibold mb-2 text-sm" htmlFor="checkin">
-            {checkin}
+            {checkin.label}
           </label>
           <input
             type="date"
             id="checkin"
             className="rounded-md px-4 py-3 border border-gray-400 w-full"
-            {...register("checkin", { required: "La fecha de check-in es requerida", validate: validateDate })}
+            {...register("checkin", { required: checkin.errors.required, validate: validateDate })}
           />
           {
             errors.checkin && <span className="text-sm text-red-500">{errors.checkin.message}</span>
@@ -62,13 +92,13 @@ export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: F
         </div>
         <div>
           <label className="block font-semibold mb-2 text-sm" htmlFor="checkout">
-            {checkout}
+            {checkout.label}
           </label>
           <input
             type="date"
             id="checkout"
             className="rounded-md px-4 py-3 border border-gray-400 w-full"
-            {...register("checkout", { required: "La fecha de salida es requerida", validate: validateCheckoutDate })}
+            {...register("checkout", { required: checkout.errors.required, validate: validateCheckoutDate })}
           />
           {
             errors.checkout && <span className="text-sm text-red-500">{errors.checkout.message}</span>
@@ -76,12 +106,12 @@ export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: F
         </div>
         <div>
           <label className="block font-semibold mb-2 text-sm" htmlFor="adults">
-            {adults}
+            {adults.label}
           </label>
           <select
             id="adults"
             className="rounded-md px-4 py-3 border border-gray-400 bg-white w-full"
-            {...register("adults", { required: "El número de adultos es requerido"})}
+            {...register("adults", { required: adults.errors.required})}
           >
             <option>1</option>
             <option>2</option>
@@ -95,12 +125,12 @@ export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: F
         </div>
         <div>
           <label className="block font-semibold mb-2 text-sm" htmlFor="children">
-            {children}
+            {children.label}
           </label>
           <select
             id="children"
             className="rounded-md px-4 py-3 border border-gray-400 bg-white w-full"
-            {...register("children", { required: "El número de niños es requerido" })}
+            {...register("children", { required: children.errors.required })}
           >
             <option>0</option>
             <option>1</option>

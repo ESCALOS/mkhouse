@@ -37,10 +37,33 @@
         "availability": {
             "title": "Verificar Disponibilidad",
             "form": {
-                "checkin": "Fecha de Ingreso",
-                "checkout": "Fecha de Salida",
-                "adults": "Adultos",
-                "children": "Niños"
+                "checkin": {
+                    "label": "Fecha de ingreso",
+                    "errors": {
+                        "required": "La fecha de ingreso es requerida",
+                        "validateDate": "Fecha no válida"
+                    }
+                },
+                "checkout": {
+                    "label": "Fecha de salida",
+                    "errors": {
+                        "required":"La fecha de salida es requerida",
+                        "validateDate": "Fecha no válida",
+                        "validateCheckoutDate": "La fecha de salida debe ser posterior a la fecha de ingreso"
+                    }
+                },
+                "adults": {
+                    "label": "Adults",
+                    "errors": {
+                        "required": "La cantidad de adultos es requerida"
+                    }
+                },
+                "children": {
+                    "label": "Children",
+                    "errors": {
+                        "required": "La cantidad de niños es requerida"
+                    }
+                }
             },
             "buttonText": "Verificar Disponibilidad"
         },
@@ -418,12 +441,40 @@
         ],
         "form": {
             "inputs": {
-                "name": "Nombre",
-                "email": "Correo Electrónico",
-                "subject": "Asunto",
-                "message": "Mensaje"
+                "name": {
+                    "label": "Nombre",
+                    "errors": {
+                        "required": "El nombre es requerido",
+                        "minLength": "El nombre debe tener al menos 3 caracteres",
+                        "maxLength": "El nombre debe tener menos de 20 caracteres"
+                    }
+                },
+                "email": {
+                    "label": "Correo electrónico",
+                    "errors": {
+                        "required": "El correo electrónico es requerido",
+                        "pattern": "El correo electrónico no es válido"
+                    }
+                },
+                "subject": {
+                    "label": "Asunto",
+                    "errors": {
+                        "required": "El asunto es requerido",
+                        "minLength": "El asunto debe tener al menos 3 caracteres"
+                    }
+                },
+                "message": {
+                    "label": "Mensaje",
+                    "errors": {
+                        "required": "El mensaje es requerido",
+                        "minLength": "El mensaje debe tener al menos 3 caracteres"
+                    }
+                }
             },
-            "buttonText": "Enviar Mensaje"
+            "buttonText":{
+                "normal": "Enviar mensaje",
+                "loading": "Enviando..."
+            }
         }
     }
 }

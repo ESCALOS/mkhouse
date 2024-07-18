@@ -1,18 +1,55 @@
 import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form"
 
-type Inputs = {
+type Form = {
   name: string,
   email: string,
   subject: string,
   message: string
 }
 
-export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
-  const { register, handleSubmit, formState: {errors}, reset } = useForm<Inputs>();
+type Inputs = {
+  name: {
+    label: string,
+    errors: {
+      required: string,
+      minLength: string,
+      maxLength: string
+    }
+  },
+  email: {
+    label: string,
+    errors: {
+      required: string,
+      pattern: string
+    }
+  }
+  subject: {
+    label: string,
+    errors: {
+      required: string,
+      minLength: string
+    }
+  }
+  message: {
+    label: string,
+    errors: {
+      required: string,
+      minLength: string
+    }
+  }
+}
+
+export default ({inputs, buttonText }: {
+  inputs: Inputs, 
+  buttonText: {
+    normal: string,
+    loading: string
+  }}) => {
+  const { register, handleSubmit, formState: {errors}, reset } = useForm<Form>();
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const onSubmit: SubmitHandler<Inputs> = async data => {
+  const onSubmit: SubmitHandler<Form> = async data => {
     setIsSubmitting(true)
     try {
       const response = await fetch('/api/sendEmail', {
@@ -43,20 +80,20 @@ export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
           <input
             className="p-4 border border-gray-200 transition-all duration-300 bg-gray-100 focus:bg-white focus:border-secondary-500 rounded-md outline-none w-full"
             type="text"
-            placeholder={inputs.name}
+            placeholder={inputs.name.label}
             autoComplete="name"
             {...register("name", { 
               required: {
                 value: true,
-                message: 'El nombre es requerido'
+                message: inputs.name.errors.required
               },
               minLength: {
                 value: 3,
-                message: 'El nombre debe tener al menos 3 caracteres'
+                message: inputs.name.errors.minLength
               },
               maxLength: {
                 value: 20,
-                message: 'El nombre debe tener menos de 20 caracteres'
+                message: inputs.name.errors.maxLength
               }
             })}
           />
@@ -66,16 +103,16 @@ export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
           <input
             className="p-4 border border-gray-200 transition-all duration-300 bg-gray-100 focus:bg-white focus:border-secondary-500 rounded-md outline-none w-full"
             type="email"
-            placeholder={inputs.email}
+            placeholder={inputs.email.label}
             autoComplete="email"
             {...register("email", { 
               required: {
                 value: true,
-                message: 'El correo es requerido'
+                message: inputs.email.errors.required
               },
               pattern: {
                 value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-                message: 'El correo no es válido'
+                message: inputs.email.errors.pattern
               }
             })}
           />
@@ -85,16 +122,16 @@ export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
           <input
             className="p-4 border border-gray-200 transition-all duration-300 bg-gray-100 focus:bg-white focus:border-secondary-500 rounded-md outline-none w-full"
             type="text"
-            placeholder={inputs.subject}
+            placeholder={inputs.subject.label}
             autoComplete="subject"
             {...register("subject", { 
               required: {
                 value: true,
-                message: 'El asunto es requerido'
+                message: inputs.subject.errors.required
               },
               minLength: {
                 value: 3,
-                message: 'El asunto debe tener al menos 3 caracteres'
+                message: inputs.subject.errors.minLength
               }
             })}
           />
@@ -104,16 +141,16 @@ export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
           <input
             className="p-4 border border-gray-200 transition-all duration-300 bg-gray-100 focus:bg-white focus:border-secondary-500 rounded-md outline-none w-full"
             type="text"
-            placeholder={inputs.message}
+            placeholder={inputs.message.label}
             autoComplete="message"
             {...register("message", { 
               required: {
                 value: true,
-                message: 'El mensaje es requerido'
+                message: inputs.message.errors.required
               },
               minLength: {
                 value: 3,
-                message: 'El mensaje debe tener al menos 3 caracteres'
+                message: inputs.message.errors.minLength
               }
             })}
           />
@@ -148,10 +185,10 @@ export default ({inputs, buttonText }: {inputs: Inputs, buttonText:string}) => {
                   d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                 ></path>
               </svg>
-              Enviando...
+              {buttonText.loading}
             </span>
           ) : (
-            buttonText
+            buttonText.normal
           )}
         </button>
       </div>
