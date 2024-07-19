@@ -40,12 +40,12 @@ type Inputs = {
   }
 }
 
-export default ({inputs, buttonText }: {
+export default function ContactForm ({inputs, buttonText }: {
   inputs: Inputs, 
   buttonText: {
     normal: string,
     loading: string
-  }}) => {
+  }}) {
   const { register, handleSubmit, formState: {errors}, reset } = useForm<Form>();
   const [isSubmitting, setIsSubmitting] = useState(false)
 

@@ -8,7 +8,7 @@ import {
   } from "@/i18n/utils";
 import NavItem from "./NavItem";
 
-export default ({ currentUrl, logoPath }) => {
+export default function Navbar ({ currentUrl, logoPath }) {
     const lang = getLangFromUrl(currentUrl);
     const t = useTranslations(lang);
     const translatePath = useTranslatedPath(lang);

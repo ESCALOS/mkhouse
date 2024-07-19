@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import '@/styles/review.css'
 import { Autoplay,Pagination } from 'swiper/modules';
 
-export default ({reviews}: {reviews: {customer: string, review: string}[]}) => {
+export default function ReviewSlider ({reviews}: {reviews: {customer: string, review: string}[]}) {
     const breakpoints = {
         640: {
           slidesPerView: 2,

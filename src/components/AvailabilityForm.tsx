@@ -37,7 +37,7 @@ type Inputs = {
   },
 }
 
-export default ({form: {checkin,checkout,adults,children}, buttonText}: {form: Inputs, buttonText: string}) => {
+export default function AvailabilityForm ({form: {checkin,checkout,adults,children}, buttonText}: {form: Inputs, buttonText: string}) {
     const { register, handleSubmit, formState: {errors}, getValues } = useForm<Form>();
 
     const validateDate = (date: string) => {
