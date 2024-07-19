@@ -143,7 +143,7 @@ export default function AvailabilityForm ({form: {checkin,checkout,adults,childr
           }
         </div>
         <div className="col-span-2 md:col-span-4 lg:col-span-2">
-          <label className="lg:block font-semibold mb-2 text-sm hidden" htmlFor="send">
+          <label className="lg:block font-semibold mb-2 text-sm hidden">
             {buttonText}
           </label>
           <button

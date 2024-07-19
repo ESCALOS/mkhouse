@@ -55,7 +55,7 @@ export default function Navbar ({ lang, currentUrl, logoPath }: {lang: 'es'| 'en
                     }
                 </div>
                 <motion.div 
-                    className="lg:hidden p-2 rounded-md hover:bg-gray-200"
+                    className="lg:hidden p-2 rounded-md hover:bg-gray-200 cursor-pointer"
                     onClick={() =>setOpenNav(!openNav)}>
                     {
                         openNav ? <XMarkIcon title="xMark" className="w-6 h-6" strokeWidth={2} />
@@ -72,7 +72,7 @@ export default function Navbar ({ lang, currentUrl, logoPath }: {lang: 'es'| 'en
                 <div className="flex gap-1 items-center justify-center flex-col py-4">
                     {
                         navListItems.map((item, index) => (
-                            <NavItem href={translatePath(item.href)} currentUrl={currentUrl} name={item.label} key={index}/>
+                            <NavItem href={item.href} currentUrl={currentUrl} name={item.label} key={index}/>
                         ))
                     }
                 </div>
