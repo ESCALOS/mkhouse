@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 
-export default ({images = [], title = "Gallery"}) => {
+export default ({images, title}: {images: string[], title: string}) => {
     const galleryID ="gallery-room"
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -14,7 +14,6 @@ export default ({images = [], title = "Gallery"}) => {
 
     return () => {
       lightbox.destroy();
-      lightbox = null;
     };
   }, []);
 

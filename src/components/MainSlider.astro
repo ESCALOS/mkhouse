@@ -1,6 +1,6 @@
 ---
 import MainSliderItem from "./MainSliderItem.astro";
-const images = Array.from({ length: 7 }, (_, i) => i + 1);
+const images = Array.from({ length: 5 }, (_, i) => i + 1);
 ---
 
 <swiper-container
@@ -14,10 +14,7 @@ const images = Array.from({ length: 7 }, (_, i) => i + 1);
   {
     images.map((image) => (
       <swiper-slide>
-        <MainSliderItem
-          id={image}
-          imagePath={`/src/images/slide/${image}.webp`}
-        />
+        <MainSliderItem imagePath={`/src/images/slide/${image}.webp`} />
       </swiper-slide>
     ))
   }

@@ -118,56 +118,38 @@
             "items": [
                 {
                     "customer": "José Chafloque",
-                    "date": "hace 11 meses en Google",
-                    "raiting": 5,
                     "review": "En mi viaje a Tarapoto, sin duda, fue la mejor alternativa. Además de los desayunos y el traslado desde el aeropuerto (que están incluidos), es un lugar agradable, fresco, con mucho espacio y una cocina bien equipada. El ambiente es tranquilo, apartado del ruido de las motos citadinas, que por cierto abundan... También hacen movilidad privada, es cuestión de coordinar. Regresaría sin pensarlo."
                 },
                 {
                     "customer": "Ximena",
-                    "date": "Hace 4 meses en  Google",
-                    "raiting": 5,
                     "review": "Excelente lugar y excelentes personas que te reciben y te hacen sentir más cómodo que en casa! Súper recomendado!!!!"
                 },
                 {
                     "customer": "Emily Rivera",
-                    "date": "hace 11 meses en Google",
-                    "raiting": 5,
                     "review": "Viajé con mi familia hace 2 meses y nos hospedamos por 5 días, un espacio amplio y sobre todo donde relajarse, lejos de la bulla citadina. Está bien rodeado de árboles, usamos los espacios comúnes con toda tranquilidad, la cocina un súper plus, los balcones para salir a relajarse un poco y si coordinas, tienes movilidad para el aeropuerto. Lo que más me gustó era la vista desde mi habitación al despertar. De todas maneras volveremos a ir para nuestro siguiente viaje 🤗"
                 },
                 {
                     "customer": "Manolo Trigoso Barentzen",
-                    "date": "hace 8 meses en Google",
-                    "raiting": 5,
                     "review": "La Casa de Marlon y Karina, anfitriones excepcionales, siempre dispuestos a brindar un servicio de primera y estar atentos a tus necesidades 👍, recojo y retorno al aeropuerto, ambiente tranquilo, lejos de bullicio de las motos, habitaciones amplias, cómodas y frescas con balcón y vista a naturaleza, baños limpios y con todos los accesorios, buena conexion a Internet, desayunos incluidos y algo invalorable: un buen ambiente como en casa 🏡. 😉"
                 },
                 {
                     "customer": "Eduardo Morales",
-                    "date": "hace 2 meses en Google",
-                    "raiting": 5,
                     "review": "Un excelente lugar con anfitriones de primera 100 % recomendable."
                 },
                 {
                     "customer": "Isabel Guédez",
-                    "date": "hace 10 meses en Google",
-                    "raiting": 5,
                     "review": "Excelente lugar para alejarse unos días y disfrutar de una maravillosa vista, clima muy ameno en una casa espaciosa, con lindos acabados, todo de estreno. Super recomendado"
                 },
                 {
                     "customer": "Josecarlos Alarcon",
-                    "date": "hace 10 meses en Google",
-                    "raiting": 5,
                     "review": "Alojamiento con habitaciones muy amplias, todas con balcones, frescas y bien ventiladas .La atención de Karina y Marlon con nosotros fue estupenda. Los recomiendo!"
                 },
                 {
                     "customer": "ELIZABETH HOPPEN",
-                    "date": "hace 10 meses en Google",
-                    "raiting": 5,
                     "review": "La casa de Marlon y Karina, un lugar muy agradable, acogedor me sentí muy cómoda y la atención de parte de sus Anfitriones excelente. Volveré muy pronto."
                 },
                 {
                     "customer": "Patricia Castillo",
-                    "date": "hace 2 meses en Google",
-                    "raiting": 5,
                     "review": "Sin duda la mejor opción para aquellas personas que desean unos días de paz y pleno contacto con la naturaleza que nos ofrece la hermosa ciudad de Tarapoto. Anfitriones de primera hacen un ambiente familiar muy agradable"
                 }
             ]
