@@ -2,37 +2,36 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
-    getLangFromUrl,
     useTranslations,
-    useTranslatedPath,
+    useTranslatedPath
   } from "@/i18n/utils";
 import NavItem from "./NavItem";
 
-export default function Navbar ({ currentUrl, logoPath }) {
-    const lang = getLangFromUrl(currentUrl);
+export default function Navbar ({ lang, currentUrl, logoPath }: {lang: 'es'| 'en', currentUrl: string, logoPath: string}) {
+    
     const t = useTranslations(lang);
     const translatePath = useTranslatedPath(lang);
     const [openNav, setOpenNav] = useState(false)
     const navListItems = [
         {
             href: translatePath("/"),
-            label: "nav.inicio"
+            label: t("nav.inicio")
         },
         {
             href: `${translatePath("/")}#about`,
-            label: "nav.nosotros"
+            label: t( "nav.nosotros")
         },
         {
             href: `${translatePath("/")}#gallery-room`,
-            label: "nav.galeria"
+            label: t("nav.galeria")
         },
         {
             href: `${translatePath("/")}#services`,
-            label: "nav.servicios"
+            label: t("nav.servicios")
         },
         {
             href: `${translatePath("/")}#contact`,
-            label: "nav.contactenos"
+            label: t("nav.contactenos")
         }
 ]
     useEffect(() => {
@@ -51,7 +50,7 @@ export default function Navbar ({ currentUrl, logoPath }) {
                 <div className="hidden lg:flex items-center justify-center px-4 gap-4">
                     {
                         navListItems.map((item, index) => (
-                            <NavItem href={item.href} currentUrl={currentUrl.pathname} name={t(item.label)} key={index}/>
+                            <NavItem href={item.href} currentUrl={currentUrl} name={item.label} key={index}/>
                         ))
                     }
                 </div>
@@ -73,7 +72,7 @@ export default function Navbar ({ currentUrl, logoPath }) {
                 <div className="flex gap-1 items-center justify-center flex-col py-4">
                     {
                         navListItems.map((item, index) => (
-                            <NavItem href={translatePath(item.href)} currentUrl={currentUrl.pathname} name={t(item.label)} key={index}/>
+                            <NavItem href={translatePath(item.href)} currentUrl={currentUrl} name={item.label} key={index}/>
                         ))
                     }
                 </div>
